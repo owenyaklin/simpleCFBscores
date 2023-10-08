@@ -1,8 +1,8 @@
 import { Provider } from 'react-redux';
 import { PersistGate } from 'redux-persist/integration/react';
 
-import { MainView } from "./src/navigation/mainView"
-import { store, persistor } from "./src/store/store"
+import { MainView } from "./src/components/mainView";
+import { store, persistor } from "./src/store/store";
 
 export default function App() {
   return (
