@@ -3,10 +3,13 @@ import { Pressable, StyleSheet, Text, View } from 'react-native';
 import { useDispatch, useSelector } from 'react-redux'
 import { updateUsername } from '../actions/user';
 
-export const MainView = ({ }) => {
+export default function MainView() {
     const dispatch = useDispatch();
 
     const user = useSelector(state => state.user);
+
+    const cfbdToken = process.env.EXPO_PUBLIC_CFBD_TOKEN;
+    console.log(`cfbdToken is ${cfbdToken}`);
 
     const saveUsername = () => {
         dispatch(updateUsername('Owen'));

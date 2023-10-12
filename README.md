@@ -6,4 +6,4 @@ Uses API from [CollegeFootballData](https://collegefootballdata.com/). Must get 
 
 ## Quick Start
  - Copy .env.example to .env to create environment variable file.
- - Fill in CFBD_TOKEN with the the key to access the CFBD API.
+ - Fill in EXPO_PUBLIC_CFBD_TOKEN with the the key to access the CFBD API.
